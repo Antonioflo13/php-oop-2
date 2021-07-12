@@ -9,6 +9,7 @@ $client1 = new Clients("Antonio","Flore",29);
 $category = new Categories("Accessori");
 $magazines = new Magazines("Occhiali","Ray-Ban",20,"ciao");
 $product1->setPriceValute(1);
+$client1->setFinalPrice(20)
 
 ?>
 
@@ -31,6 +32,7 @@ $product1->setPriceValute(1);
                 <h4><?= $product1->price ?></h4>
                 <h4>Sconto Prime</h4>
                 <h4><?= $client1->discount ?></h4>
+                <h4><?= $client1->finalPrice ?></h4>
                 <h4><?= $category->name ?></h4>
                 <h4><?= $magazines->setFullPosition("Bologna","Via dei colli,1","20189","Emilia-Romagna")?></h4>
             </section>
